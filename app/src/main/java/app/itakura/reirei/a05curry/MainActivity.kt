@@ -3,15 +3,15 @@ package app.itakura.reirei.a05curry
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import androidx.appcompat.app.AppCompatViewInflater
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
-    val people = arrayOf("五条悟","虎杖悠仁","パンダ","七海建人")
-    val food = arrayOf("カレー","ハンバーグ","ラーメン","ピザ","スパゲティ","寿司","麻婆豆腐")
-    val verb = arrayOf("食べました！","食べませんでした")
+    val text = arrayOf("大吉","中吉","小吉","凶")
+    val item = arrayOf("カレー","パソコン","水筒","お気に入りのペン","ぬいぐるみ","メガネ","香水")
+    val color = arrayOf("赤","ピンク","オレンジ","黄色","緑","青","白","黒")
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,19 +23,19 @@ class MainActivity : AppCompatActivity() {
 
     fun serveFood(view:View?){
 
-        val randomName = Random()
-        val nameIndex = randomName.nextInt(4)
-        val name = people[nameIndex]
-        nameTextView.text = name + "は"
+        val random = Random()
+        val index = random.nextInt(4)
+        val text = text[index]
+        textView.text = text
 
-        val randomFood = Random()
-        val foodIndex = randomFood.nextInt(7)
-        val food = food[foodIndex]
-        foodTextView.text = food + "を"
+        val randomItem = Random()
+        val itemIndex = randomItem.nextInt(7)
+        val item = item[itemIndex]
+        itemTextView.text = item
 
         //foodTextView.text = food[Random().nextInt(4)]+"を"
 
-        verbTextView.text = verb[Random().nextInt(2)]
+        colorTextView.text = color[Random().nextInt(8)]
 
 
 //        if (Random().nextInt(100)<50){
@@ -45,4 +45,4 @@ class MainActivity : AppCompatActivity() {
 //            verbTextView.textSize = 36.0f
 //        }
     }
-}
+}1

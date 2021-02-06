@@ -58,24 +58,24 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/nameTextView"
+                    android:id="@+id/textView"
                     android:layout_width="482dp"
                     android:layout_height="95dp"
                     android:layout_weight="1"
                     android:fontFamily="cursive"
                     android:gravity="center"
-                    android:text="なまえ"
+                    android:text="☆"
                     android:textColor="#FFFFFF"
                     android:textSize="24sp" />
 
                 <TextView
-                    android:id="@+id/verbTextView"
+                    android:id="@+id/colorTextView"
                     android:layout_width="477dp"
                     android:layout_height="95dp"
                     android:layout_weight="1"
                     android:fontFamily="cursive"
                     android:gravity="center"
-                    android:text="よそえました！"
+                    android:text="ラッキーカラー"
                     android:textColor="#FFFFFF"
                     android:textSize="24sp" />
             </LinearLayout>
@@ -87,13 +87,13 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/foodTextView"
+                    android:id="@+id/itemTextView"
                     android:layout_width="211dp"
                     android:layout_height="134dp"
                     android:layout_weight="1"
                     android:fontFamily="cursive"
                     android:gravity="center"
-                    android:text="食べもの"
+                    android:text="ラッキーアイテム"
                     android:textColor="#FFFFFF"
                     android:textSize="24sp" />
 
@@ -106,7 +106,7 @@
                     android:fontFamily="sans-serif-condensed"
                     android:gravity="center"
                     android:onClick="serveFood"
-                    android:text="change！" />
+                    android:text="占う！" />
 
             </LinearLayout>
 
